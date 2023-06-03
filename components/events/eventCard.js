@@ -10,13 +10,12 @@ const EventCard = ({
   organizer,
 }) => (
   <Card className="text-center">
-    <Card.Header>{game}</Card.Header>
+    <Card.Header>Title: {game}</Card.Header>
     <Card.Body>
       <Card.Title>Description: {description}</Card.Title>
-      <Card.Text>{date}</Card.Text>
-      <Card.Text>{time}</Card.Text>
-      <Card.Text>{organizer}</Card.Text>
     </Card.Body>
+    <Card.Footer className="text-muted">Date: {date} Time: {time} Organizer: {organizer}
+    </Card.Footer>
   </Card>
 );
 
